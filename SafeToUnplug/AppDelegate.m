@@ -22,7 +22,7 @@
 }
 
 - (void)didUnmountNotification:(NSNotification*)notification {
-    NSLog(@"%@ %@", notification, [notification userInfo]);
+    //NSLog(@"%@ %@", notification, [notification userInfo]);
     
     NSUserNotification *userNote = [NSUserNotification new];
     userNote.title = @"Safe to Unplug";
