@@ -12,6 +12,10 @@ Compile it yourself or snag the precompiled binary.
 
 I recommend you add it as a Login Item (System Preferences > Users & Groups > Current User > Login Items.
 
+# Disclaimer
+
+I'm not sure if this app will even work. I'd imagine the Finder uses the same mechanism as this app uses to dismiss the volume's icon. But maybe not. So this is a shot in the dark. Let me know if it fails for you and maybe I can think of something else. Or Apple could, you know, fix their software.
+
 # Credits
 
 I was alerted to this SafeToUnplug implementation technique by [Peter Hosey](https://twitter.com/boredzo/status/263341185802858497). The code is mostly stolen from [Ullrich Schaefer's](https://twitter.com/stigi) [Stackoverflow answer](http://stackoverflow.com/a/1410174/5260).
