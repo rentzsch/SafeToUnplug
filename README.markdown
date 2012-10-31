@@ -1,5 +1,7 @@
 # Reason for Existence
 
+It started with a [tweet](https://twitter.com/rentzsch/status/263340713478070272).
+
 SafeToUnplug is a tiny faceless background app that notifies you (via 10.8's Notification Center) when it's actually safe to unplug a newly-unmounted drive.
 
 For some reason Finder (seen last on OS X 10.8.2) sometimes dismisses a volume's icon from it's UI while the system is still actively unmounting it. Unplugging a drive while it's busy flushing its buffers is a great way to corrupt data.
