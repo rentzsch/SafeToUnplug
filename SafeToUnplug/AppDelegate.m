@@ -1,10 +1,9 @@
-//
 //  AppDelegate.m
 //  SafeToUnplug
 //
-//  Created by Wolf Rentzsch on 10/30/12.
-//  Copyright (c) 2012 Jonathan 'Wolf' Rentzsch. All rights reserved.
-//
+//  Copyright (c) 2012 Jonathan 'Wolf' Rentzsch: http://rentzsch.com
+//  Some rights reserved: http://opensource.org/licenses/mit
+
 
 #import "AppDelegate.h"
 
