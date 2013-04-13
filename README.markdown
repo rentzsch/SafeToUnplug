@@ -28,6 +28,12 @@ I was alerted to this SafeToUnplug implementation technique by [Peter Hosey](htt
 
 # Version History
 
+### v1.1: Fri Apr 12 2013
+
+* Suppress unmount notifications of volumes named "Boot OS X".
+
+	For some reason OS X like to mount and unmount this rescue volume a lot and it's annoying to be notified of it.
+
 ### v1.0: Tue Oct 30 2012 [download](https://github.com/downloads/rentzsch/SafeToUnplug/SafeToUnplug-1.0.zip)
 
 * Initial release.
