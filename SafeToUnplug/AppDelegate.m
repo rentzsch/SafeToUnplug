@@ -23,11 +23,15 @@
 - (void)didUnmountNotification:(NSNotification*)notification {
     //NSLog(@"%@ %@", notification, [notification userInfo]);
     
-    NSUserNotification *userNote = [NSUserNotification new];
-    userNote.title = @"Safe to Unplug";
-    userNote.informativeText = [[notification userInfo] objectForKey:NSWorkspaceVolumeLocalizedNameKey];
-    userNote.hasActionButton = NO;
-    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:userNote];
+    NSString *volumeName = [[notification userInfo] objectForKey:NSWorkspaceVolumeLocalizedNameKey];
+    
+    if (![volumeName isEqualToString:@"Boot OS X"]) { // Cover up random rescue volume unmounts.
+        NSUserNotification *userNote = [NSUserNotification new];
+        userNote.title = @"Safe to Unplug";
+        userNote.informativeText = volumeName;
+        userNote.hasActionButton = NO;
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:userNote];
+    }
 }
 
 @end
